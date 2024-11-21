@@ -1,0 +1,68 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "app": {
+    "enableGTKAppId": false,
+    "macOSPrivateApi": false,
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "acceptFirstMouse": false,
+        "alwaysOnBottom": false,
+        "alwaysOnTop": false,
+        "browserExtensionsEnabled": false,
+        "center": false,
+        "closable": true,
+        "contentProtected": false,
+        "create": true,
+        "decorations": true,
+        "dragDropEnabled": false,
+        "focus": true,
+        "fullscreen": false,
+        "height": 600,
+        "hiddenTitle": false,
+        "incognito": false,
+        "label": "main",
+        "maximizable": true,
+        "maximized": false,
+        "minimizable": true,
+        "resizable": true,
+        "shadow": true,
+        "skipTaskbar": false,
+        "theme": null,
+        "title": "utiliflow",
+        "titleBarStyle": "Visible",
+        "transparent": false,
+        "url": "index.html",
+        "useHttpsScheme": false,
+        "visible": true,
+        "visibleOnAllWorkspaces": false,
+        "width": 800,
+        "zoomHotkeysEnabled": false
+      }
+    ],
+    "withGlobalTauri": false
+  },
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:3000",
+    "frontendDist": "../out"
+  },
+  "bundle": {
+    "active": true,
+    "copyright": "Maxime Bodin",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "targets": "all"
+  },
+  "identifier": "com.tauri.dev",
+  "productName": "utiliflow",
+  "version": "0.1.0"
+}
